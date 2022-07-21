@@ -16,7 +16,7 @@ services:
     environment:
       DATABASE_URL: postgresql://testuser:testuserpass@db:5432/testdb
       LOG_LEVEL: INFO
-      STEEMD_URL: https://api.steemit.com
+      STEEMD_URL: 10.10.2.4:8080
     links:
       - db:db
     ports:
